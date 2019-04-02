@@ -1,0 +1,30 @@
+C:\Users\hello\source\repos\SieuNhanGaoBlog\SieuNhanGao.Utilities\bin\Debug\netcoreapp2.2\SieuNhanGao.Utilities.deps.json
+C:\Users\hello\source\repos\SieuNhanGaoBlog\SieuNhanGao.Utilities\bin\Debug\netcoreapp2.2\SieuNhanGao.Utilities.dll
+C:\Users\hello\source\repos\SieuNhanGaoBlog\SieuNhanGao.Utilities\bin\Debug\netcoreapp2.2\SieuNhanGao.Utilities.pdb
+C:\Users\hello\source\repos\SieuNhanGaoBlog\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.csprojAssemblyReference.cache
+C:\Users\hello\source\repos\SieuNhanGaoBlog\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\hello\source\repos\SieuNhanGaoBlog\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.AssemblyInfoInputs.cache
+C:\Users\hello\source\repos\SieuNhanGaoBlog\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.AssemblyInfo.cs
+C:\Users\hello\source\repos\SieuNhanGaoBlog\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.dll
+C:\Users\hello\source\repos\SieuNhanGaoBlog\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.pdb
+C:\Users\vietdq5\Desktop\New folder\git\BlogGaoDo-master\SieuNhanGao.Utilities\bin\Debug\netcoreapp2.2\SieuNhanGao.Utilities.deps.json
+C:\Users\vietdq5\Desktop\New folder\git\BlogGaoDo-master\SieuNhanGao.Utilities\bin\Debug\netcoreapp2.2\SieuNhanGao.Utilities.dll
+C:\Users\vietdq5\Desktop\New folder\git\BlogGaoDo-master\SieuNhanGao.Utilities\bin\Debug\netcoreapp2.2\SieuNhanGao.Utilities.pdb
+C:\Users\vietdq5\Desktop\New folder\git\BlogGaoDo-master\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.csprojAssemblyReference.cache
+C:\Users\vietdq5\Desktop\New folder\git\BlogGaoDo-master\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\vietdq5\Desktop\New folder\git\BlogGaoDo-master\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.AssemblyInfoInputs.cache
+C:\Users\vietdq5\Desktop\New folder\git\BlogGaoDo-master\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.AssemblyInfo.cs
+C:\Users\vietdq5\Desktop\New folder\git\BlogGaoDo-master\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.dll
+C:\Users\vietdq5\Desktop\New folder\git\BlogGaoDo-master\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.pdb
+C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Utilities\bin\Debug\netcoreapp2.2\SieuNhanGao.Utilities.deps.json
+C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Utilities\bin\Debug\netcoreapp2.2\SieuNhanGao.Utilities.dll
+C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Utilities\bin\Debug\netcoreapp2.2\SieuNhanGao.Utilities.pdb
+C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Utilities\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Utilities\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.csprojAssemblyReference.cache
+C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.AssemblyInfoInputs.cache
+C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.AssemblyInfo.cs
+C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.csproj.CopyComplete
+C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.dll
+C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Utilities\obj\Debug\netcoreapp2.2\SieuNhanGao.Utilities.pdb
