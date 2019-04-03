@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Infrastructure\\SieuNhanGao.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Infrastructure\\SieuNhanGao.Infrastructure.csproj",
       "projectName": "SieuNhanGao.Infrastructure",
-      "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Infrastructure\\SieuNhanGao.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Infrastructure\\SieuNhanGao.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\hello\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -24,7 +24,6 @@ namespace SieuNhanGao.Data
             }
         }
 
-        // Expression<Func<T, object>>[]includeProperties: truyền vào các thuộc tính cần get ra
         public IQueryable<T> FindAll(params Expression<Func<T, object>>[] includeProperties)
         {
             IQueryable<T> items = dbContext.Set<T>();
@@ -38,11 +37,9 @@ namespace SieuNhanGao.Data
             return items;
         }
 
-        // Expression<Func<T, bool>> filter: truyền vào một filter expression dạng LINQ 
         public IQueryable<T> FindAll(Expression<Func<T, bool>> filter, params Expression<Func<T, object>>[] includeProperties)
         {
             IQueryable<T> items = dbContext.Set<T>();
-            // duyệt qua các propeties của T để thêm vào filter
             if (includeProperties != null)
             {
                 foreach (var includeProperty in includeProperties)
@@ -53,7 +50,19 @@ namespace SieuNhanGao.Data
             return items.Where(filter);
         }
 
-        // get ra T theo filter và các properties cần get
+        public IQueryable<T> FindAll(Expression<Func<T, bool>> filter, string properties = "")
+        {
+            IQueryable<T> items = dbContext.Set<T>();
+            if (!string.IsNullOrEmpty(properties))
+            {
+                foreach (var property in properties.Split(new char[] {','},StringSplitOptions.RemoveEmptyEntries))
+                {
+                    items = items.Include(property);
+                }
+            }
+            return items.Where(filter);
+        }
+
         public T FindSingle(Expression<Func<T, bool>> filter, params Expression<Func<T, object>>[] includeProperties)
         {
             return FindAll(includeProperties).SingleOrDefault(filter);

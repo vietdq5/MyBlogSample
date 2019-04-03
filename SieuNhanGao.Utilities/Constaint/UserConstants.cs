@@ -6,5 +6,6 @@
         public static string USER_NAME = "UserName";
         public static string USER_PASS = "UserPass";
         public static string USER_AVATAR = "UserAvatar";
+        public static string IS_ADMIN = "IsAdmin";
     }
 }

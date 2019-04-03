@@ -1,0 +1,7 @@
+﻿@model IEnumerable<SieuNhanGao.Service.ViewModels.TagViewModel>
+@{
+    foreach (var item in Model)
+    {
+        <li class="list-inline-item"><a href="/tags/@item.TagName" class="tag">#@item.TagName</a></li>
+    }
+}

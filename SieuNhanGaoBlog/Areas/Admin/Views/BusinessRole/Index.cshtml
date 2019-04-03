@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<SieuNhanGao.Service.ViewModels.BusinessRoleViewModel>
+@{
+    <div class="card shadow mb-4">
+        <div class="container-fluid">
+            <div class="card-header py-3">
+                <p class="m-0 font-weight-bold text-primary">
+                    <a asp-area="Admin" asp-controller="BusinessRole" asp-action="UpdateRole">Update Business Role</a>
+                </p>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Id)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.BusinessRoleName)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Id)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.BusinessRoleName)
+                                    </td>
+                                    <td>
+                                        <a asp-area="Admin" asp-controller="BusinessRole" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                        <a asp-area="Admin" asp-controller="Role" asp-action="Index" asp-route-id="@item.Id">Detail</a> |
+                                        <a asp-area="Admin" asp-controller="BusinessRole" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            @* add phan trang *@
+        </div>
+    </div>
+}

@@ -25,3 +25,12 @@ C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Infrastructure\obj
 C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Infrastructure\obj\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.AssemblyInfo.cs
 C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Infrastructure\obj\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.dll
 C:\Users\hello\Desktop\BlogGaoDo\BlogGaoDo-master\SieuNhanGao.Infrastructure\obj\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.pdb
+C:\Users\vietdq5\Desktop\New folder\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\bin\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.deps.json
+C:\Users\vietdq5\Desktop\New folder\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\bin\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.dll
+C:\Users\vietdq5\Desktop\New folder\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\bin\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.pdb
+C:\Users\vietdq5\Desktop\New folder\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\obj\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.csprojAssemblyReference.cache
+C:\Users\vietdq5\Desktop\New folder\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\obj\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\vietdq5\Desktop\New folder\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\obj\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\vietdq5\Desktop\New folder\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\obj\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.AssemblyInfo.cs
+C:\Users\vietdq5\Desktop\New folder\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\obj\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.dll
+C:\Users\vietdq5\Desktop\New folder\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\obj\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.pdb

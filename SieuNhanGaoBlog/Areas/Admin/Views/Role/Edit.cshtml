@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@model SieuNhanGao.Service.ViewModels.RoleViewModel
+@{
+    if (Model == null)
+    {
+        <div class="card shadow mb-4">
+            <div class="container-fluid">
+                <div class="card-header py-3">
+                    <div class="card-header py-3">
+                        <p class="m-0 font-weight-bold text-primary">
+                            <h3>Không có dữ liệu con ơi</h3>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="container-fluid">
+            <h1>Edit</h1>
+            <h4>Role</h4>
+            <hr />
+            <div class="row">
+                <div class="col-md-4">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="RoleName" />
+                        <input type="hidden" asp-for="BusinessRoleId" />
+                        <div class="form-group">
+                            <label asp-for="Description" class="control-label"></label>
+                            <input asp-for="Description" class="form-control" />
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Save" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <a asp-area="Admin" asp-controller="Role" asp-action="Index" asp-route-id="@Model.BusinessRoleId">Back to List</a>
+            </div>
+        </div>
+    }
+}

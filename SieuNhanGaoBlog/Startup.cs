@@ -11,6 +11,7 @@ using SieuNhanGao.Infrastructure.Interface;
 using SieuNhanGao.Service.AutoMaperConfig;
 using SieuNhanGao.Service.IServices;
 using SieuNhanGao.Service.ServicesIml;
+using SieuNhanGaoBlog.Areas.Admin.Data;
 using System;
 
 namespace SieuNhanGaoBlog
@@ -34,7 +35,7 @@ namespace SieuNhanGaoBlog
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            // 2019/03/28 Config AutoMapper
+            // Config AutoMapper
             Mapper.Initialize(cfg =>
             {
                 cfg.AddProfile(new DomainToViewModelMappingProfile());
@@ -42,24 +43,34 @@ namespace SieuNhanGaoBlog
             });
             services.AddAutoMapper();
 
-            // 2019/03/28 DI SQLServer connect
+            // DI SQLServer connect
             services.AddDbContext<AppDbContext>(s => s.UseSqlServer(Configuration.GetConnectionString("sqlserver_connect")));
-            // 2019/03/28 Config Session
+            // Config Session
             services.AddDistributedMemoryCache();
             services.AddSession(options =>
             {
                 // Set a short timeout for easy testing.
-                options.IdleTimeout = TimeSpan.FromSeconds(50);
+                options.IdleTimeout = TimeSpan.FromSeconds(150);
                 options.Cookie.HttpOnly = true;
             });
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped<AuthorizeBusiness>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            // 2019/03/28 Config Repository and UnitOfWork
+            // Config Repository and UnitOfWork
             services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
             services.AddTransient(typeof(IReadRepository<>), typeof(ReadEFRepository<>));
             services.AddTransient(typeof(ICUDRepository<>), typeof(CUDEFRepository<>));
-            // 2019/03/28 DI Services
+            // DI Services
             services.AddTransient<ILoginService, LoginService>();
+            services.AddTransient<IPostService, PostService>();
+            services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<ITagService, TagService>();
+            services.AddTransient<ICommentService, CommentService>();
+            // admin services
+            services.AddTransient<IRoleService, RoleService>();
+            services.AddTransient<IUserRoleService, UserRoleService>();
+            services.AddTransient<IBusinessRoleService, BusinessRoleService>();
+            services.AddTransient<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -72,14 +83,15 @@ namespace SieuNhanGaoBlog
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseStatusCodePagesWithReExecute("/StatusCode/{0}");
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-            // 2019/03/28
+            // using session
             app.UseSession();
 
             app.UseMvc(routes =>

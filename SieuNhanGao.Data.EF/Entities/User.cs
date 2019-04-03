@@ -37,7 +37,7 @@ namespace SieuNhanGao.Data.EF.Entities
         public byte? Allowed { get; set; }
 
         public ICollection<UserRole> UserRoles { get; set; }
-        //public ICollection<Post> Posts { get; set; }
+        public ICollection<Post> Posts { get; set; }
 
         public User()
         {

@@ -1,8 +1,55 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@model SieuNhanGao.Utilities.Dtos.PagedResult<SieuNhanGao.Service.ViewModels.PostHomeViewModel>
+<!-- Page Content -->
+<!-- Blog Entries Column -->
+<main class="posts-listing col-lg-8">
+    <div class="container">
+        @{
+            if (Model == null || Model.Results.Count == 0)
+            {
+                <p>Không tìm thấy record</p>
+            }
+            else
+            {
+                <div class="row">
+                    @{
+                        foreach (var item in Model.Results)
+                        {
+                            var url = "/" + item.Alias + "-post." + item.Id + ".html";
+                            <!-- post -->
+                            <div class="post col-xl-6">
+                                <div class="post-thumbnail">
+                                    <a href="@url"><img src="@Url.Content(@item.Thumbnail)" alt="..." class="img-fluid"></a>
+                                </div>
+                                <div class="post-details">
+                                    <div class="post-meta d-flex justify-content-between">
+                                        <div class="date meta-last">@item.CreateDate.ToString("dd MMM yy")</div>
+                                    </div>
+                                    <a href="@url">
+                                        <h3 class="h4">@item.Title</h3>
+                                    </a>
+                                    <p class="text-muted">@item.Description</p>
+                                    <footer class="post-footer d-flex align-items-center">
+                                        <a href="#" class="author d-flex align-items-center flex-wrap">
+                                            <div class="avatar"><img src="@Url.Content(@item.ImageAvatar)" alt="..." class="img-fluid"></div>
+                                            <div class="title"><span>@item.UserName</span></div>
+                                        </a>
+                                        <div class="date"><i class="icon-clock"></i>@item.DateCreateAgo</div>
+                                        <div class="comments meta-last"><i class="icon-comment"></i>@item.ViewCount</div>
+                                    </footer>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+                <!-- end blog post-->
+                <!-- Pagination -->
+                @(await Component.InvokeAsync("Pager", Model))
+                <!-- End pagination-->
+            }
+        }
+    </div>
+</main>
+<!-- /.container -->

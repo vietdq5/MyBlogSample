@@ -1,0 +1,8 @@
+﻿
+@model IEnumerable<SieuNhanGao.Service.ViewModels.CategoriesGroupViewModel>
+@{
+    foreach (var item in Model)
+    {
+        <div class="item d-flex justify-content-between"><a href="/@item.CategoryName">@item.CategoryName</a><span>@item.GroupCount</span></div>
+    }
+}

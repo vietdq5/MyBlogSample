@@ -1,0 +1,128 @@
+﻿@using Microsoft.AspNetCore.Http
+@model SieuNhanGao.Service.ViewModels.PostViewModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var userId = @Context.Session.GetString("UserId");
+}
+<div class="card shadow mb-4">
+    <div class="container-fluid">
+        <div class="card-header py-3">
+            <div class="card-header py-3">
+                <p class="m-0 font-weight-bold text-primary">
+                    <h2>Create Post</h2>
+                </p>
+            </div>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row">
+                    <div class="form-group col-4">
+                        <label asp-for="Title" class="control-label"></label>
+                        <input asp-for="Title" class="form-control" id="title" onkeyup="ChangeToSlug();" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-1">
+                    </div>
+                    <div class="form-group col-7">
+                        <label asp-for="Description" class="control-label"></label>
+                        <input asp-for="Description" class="form-control" />
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Content" class="control-label"></label>
+                    <textarea id="areaPostContent" asp-for="Content"></textarea>
+                    <span asp-validation-for="Content" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Thumbnail" class="control-label"></label>
+                    <input asp-for="Thumbnail" class="form-control" id="title_alias" />
+                    <span asp-validation-for="Thumbnail" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Tags</label>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <select class="form-control" id="list-tags-select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-info">Add</button>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-inline" id="listtag">
+                                <li class="list-inline-item">
+                                    <a href="#" class="tag"><i class="far fa-times-circle"></i>TagName</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="tag"><i class="far fa-times-circle"></i>TagName</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="tag"><i class="far fa-times-circle"></i>TagName</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" asp-for="CreateDate" value="@DateTime.Now" />
+                <input type="hidden" asp-for="Status" value="0" />
+                <div class="form-group">
+                    <label asp-for="Alias" class="control-label"></label>
+                    <input asp-for="Alias" class="form-control" id="title_alias" />
+                    <span asp-validation-for="Alias" class="text-danger"></span>
+                </div>
+                <input type="hidden" asp-for="UserId" value="@userId" />
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    CKEDITOR.replace('areaPostContent');
+
+    function ChangeToSlug() {
+        var title;
+
+        //Lấy text từ thẻ input title
+        title = document.getElementById("title").value;
+
+        // Chuyển hết sang chữ thường
+        title = title.toLowerCase();
+
+        // xóa dấu
+        title = title.replace(/(à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ)/g, 'a');
+        title = title.replace(/(è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ)/g, 'e');
+        title = title.replace(/(ì|í|ị|ỉ|ĩ)/g, 'i');
+        title = title.replace(/(ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ)/g, 'o');
+        title = title.replace(/(ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ)/g, 'u');
+        title = title.replace(/(ỳ|ý|ỵ|ỷ|ỹ)/g, 'y');
+        title = title.replace(/(đ)/g, 'd');
+
+        // Xóa ký tự đặc biệt
+        title = title.replace(/([^0-9a-z-\s])/g, '');
+
+        // Xóa khoảng trắng thay bằng ký tự -
+        title = title.replace(/(\s+)/g, '-');
+
+        // xóa phần dự - ở đầu
+        title = title.replace(/^-+/g, '');
+
+        // xóa phần dư - ở cuối
+        title = title.replace(/-+$/g, '');
+        //In slug ra textbox có id “slug”
+        document.getElementById('title_alias').value = title;
+    }
+
+    function addTags() {
+
+    }
+</script>

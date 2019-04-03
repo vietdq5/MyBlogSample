@@ -1,0 +1,22 @@
+﻿
+@model IEnumerable<SieuNhanGao.Service.ViewModels.PostViewModel>
+@{
+    foreach (var item in Model)
+    {
+        var url = "/" + item.Alias + "-post." + item.Id + ".html";
+        <a href="@url">
+            <div class="item d-flex align-items-center">
+
+                <div class="image">
+                    <img src="@Url.Content(@item.Thumbnail)" alt="..." class="img-fluid">
+                </div>
+                <div class="title">
+                    <strong>@item.Title</strong>
+                    <div class="d-flex align-items-center">
+                        <div class="views"><i class="icon-eye"></i>@item.ViewCount</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    }
+}

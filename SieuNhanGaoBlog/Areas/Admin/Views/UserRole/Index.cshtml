@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var urlTemplate = Url.Action();
+    var currentUrl = urlTemplate.Substring(0, urlTemplate.Length - 8);
+}
+<div class="card shadow mb-4">
+    <div class="container-fluid">
+        <div class="card-header py-3">
+            <p class="m-0 font-weight-bold text-primary">
+                &gt;&gt;Cấp Quyền Cho Người Dùng &gt;&gt;<b> @ViewBag.user.UserName</b>
+            </p>
+        </div>
+        <div>
+            <div id="msg"></div>
+            <div class="row">
+                <div class="col-md-4 col-xs-2">
+                    <h4>Business Roles</h4>
+                    @Html.DropDownList("BusinessController", (IEnumerable<SelectListItem>)ViewBag.itemsBusinessRole, new { size = 10
+                    ,onchange = "getPermissions('" + @currentUrl + "/getPermissions/'+this.value,'" + @ViewBag.user.Id + "');"})
+                </div>
+                <div class="col-md-8 col-xs-4">
+                    <h4>Danh sách Roles của bạn</h4>
+                    <div id="listaction"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function getPermissions(action, usergrant)
+    {
+        $.ajax({
+            method: "GET",
+            url: action,
+            data: { usertemp: usergrant },
+            success: function (data) {
+                $('#listaction').html('');
+                $.each(data, function (index, value) {
+                    if (value.isGranted)
+                        $('#listaction').append("<input type='CheckBox' checked onchange='updatePermission(" + "\"/Admin/UserRole/updatePermission/\"+this.value,\"@ViewBag.user.Id\")'value='" + value.roleId + "'>" + value.description + "<br />");
+                    else
+                        $('#listaction').append("<input type='CheckBox' onchange='updatePermission(" + "\"/Admin/UserRole/updatePermission/\"+this.value,\"@ViewBag.user.Id\")' value='" + value.roleId + "'>" + value.description + "<br />");
+
+                });
+            }
+        });
+    }
+    function updatePermission(action, usergrant) {
+        $.ajax({
+            method: "GET",
+            url: action,
+            data: { usertemp: usergrant },
+            success: function (data) {
+                $('#msg').html(data);
+            }
+        });
+    }
+</script>

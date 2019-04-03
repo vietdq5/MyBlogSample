@@ -13100,11 +13100,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGaoBlog\\SieuNhanGaoBlog.csproj",
+      "projectUniqueName": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGaoBlog\\SieuNhanGaoBlog.csproj",
       "projectName": "SieuNhanGaoBlog",
-      "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGaoBlog\\SieuNhanGaoBlog.csproj",
+      "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGaoBlog\\SieuNhanGaoBlog.csproj",
       "packagesPath": "C:\\Users\\hello\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGaoBlog\\obj\\",
+      "outputPath": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGaoBlog\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13123,20 +13123,20 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Data.EF\\SieuNhanGao.Data.EF.csproj": {
-              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Data.EF\\SieuNhanGao.Data.EF.csproj"
+            "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Data.EF\\SieuNhanGao.Data.EF.csproj": {
+              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Data.EF\\SieuNhanGao.Data.EF.csproj"
             },
-            "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Data\\SieuNhanGao.Data.csproj": {
-              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Data\\SieuNhanGao.Data.csproj"
+            "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Data\\SieuNhanGao.Data.csproj": {
+              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Data\\SieuNhanGao.Data.csproj"
             },
-            "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Infrastructure\\SieuNhanGao.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Infrastructure\\SieuNhanGao.Infrastructure.csproj"
+            "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Infrastructure\\SieuNhanGao.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Infrastructure\\SieuNhanGao.Infrastructure.csproj"
             },
-            "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Service\\SieuNhanGao.Service.csproj": {
-              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Service\\SieuNhanGao.Service.csproj"
+            "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Service\\SieuNhanGao.Service.csproj": {
+              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Service\\SieuNhanGao.Service.csproj"
             },
-            "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Utilities\\SieuNhanGao.Utilities.csproj": {
-              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Utilities\\SieuNhanGao.Utilities.csproj"
+            "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Utilities\\SieuNhanGao.Utilities.csproj": {
+              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Utilities\\SieuNhanGao.Utilities.csproj"
             }
           }
         }

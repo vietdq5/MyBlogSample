@@ -1,0 +1,43 @@
+﻿<aside class="col-lg-4">
+    <!-- Widget [Search Bar Widget]-->
+    <div class="widget search">
+        <header>
+            <h3 class="h6">Search the blog</h3>
+        </header>
+        <form asp-controller="Home" asp-action="Search" class="search-form" method="get">
+            <div class="form-group">
+                <input type="search" name="keyword" placeholder="What are you looking for?">
+                <button type="submit" class="submit"><i class="icon-search"></i></button>
+            </div>
+        </form>
+    </div>
+    <!-- end search bar -->
+    <!-- Widget [Latest Posts Widget]        -->
+    <div class="widget latest-posts">
+        <header>
+            <h3 class="h6">Latest Posts</h3>
+        </header>
+        <div class="blog-posts">
+            @(await Component.InvokeAsync("LatestPost"))
+        </div>
+    </div>
+    <!-- end latest post -->
+    <!-- Widget [Categories Widget]-->
+    <div class="widget categories">
+        <header>
+            <h3 class="h6">Chuyên mục</h3>
+        </header>
+        @(await Component.InvokeAsync("CategoriesGroup"))
+    </div>
+    <!-- end categories post -->
+    <!-- Widget [Tags Cloud Widget]-->
+    <div class="widget tags">
+        <header>
+            <h3 class="h6">Tags</h3>
+        </header>
+        <ul class="list-inline">
+            @(await Component.InvokeAsync("Tag"))
+        </ul>
+    </div>
+    <!-- end tag wideget -->
+</aside>

@@ -2,7 +2,8 @@
 using SieuNhanGao.Data.EF.Entities;
 using SieuNhanGao.Infrastructure.Interface;
 using SieuNhanGao.Service.IServices;
-using SieuNhanGao.Service.ViewModel;
+using SieuNhanGao.Service.ViewModels;
+using System;
 using System.Linq;
 
 namespace SieuNhanGao.Service.ServicesIml
@@ -24,9 +25,20 @@ namespace SieuNhanGao.Service.ServicesIml
             return user;
         }
 
+        public UserViewModel IsAdmin(int userId)
+        {
+            var user = userRepository.FindAll(s => s.Id == userId && s.IsAdmin.Value != 0).ProjectTo<UserViewModel>().FirstOrDefault();
+            return user;
+        }
+
         public void Save()
         {
             unitOfWork.Commit();
+        }
+
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);
         }
     }
 }

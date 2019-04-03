@@ -1,0 +1,60 @@
+﻿
+@model SieuNhanGao.Utilities.Dtos.PagedResultBase
+@{
+    var urlTemplate = Url.Action() + "?page={0}";
+    var request = ViewContext.HttpContext.Request;
+    foreach (var key in request.Query.Keys)
+    {
+        if (key == "page")
+        {
+            continue;
+        }
+
+        urlTemplate += "&" + key + "=" + request.Query[key];
+    }
+
+    var startIndex = Math.Max(Model.CurrentPage - 5, 1);
+    var finishIndex = Math.Min(Model.CurrentPage + 5, Model.PageCount);
+}
+@{
+    <div class="row">
+        <div class="col-md-8 col-sm-8 items-info">
+            <p>Items @Model.FirstRowOnPage to @Model.LastRowOnPage of @Model.RowCount total</p>
+        </div>
+    </div>
+}
+<nav aria-label="Page navigation example">
+
+    <div class="col-md-12 col-sm-12" id="pagination_home">
+        @if (Model.PageCount > 1)
+        {
+            <ul class="pagination pagination-template d-flex justify-content-center">
+                <li class="page-item"><a href="@urlTemplate.Replace("{0}", "1")" class="page-link"><i class="fa fa-angle-left"></i></a></li>
+                @for (var i = startIndex; i <= finishIndex; i++)
+                {
+                    @if (i == Model.CurrentPage)
+                    {
+
+                        <li class="page-item"><a class="page-link">@i</a></li>
+                    }
+                    else
+                    {
+
+                        <li class="page-item"><a href="@urlTemplate.Replace("{0}", i.ToString())" class="page-link">@i</a></li>
+                    }
+                }
+                <li class="page-item"><a href="@urlTemplate.Replace("{0}", Model.PageCount.ToString())" class="page-link"><i class="fa fa-angle-right"></i></a></li>
+            </ul>
+        }
+    </div>
+</nav>
+
+<script>
+    var divPagination = document.getElementById("pagination_home");
+    var currentPage = divPagination.getElementsByClassName("page-link");
+    for (var i = 0; i < currentPage.length; i++) {
+        if (currentPage[i].innerText == @Model.CurrentPage) {
+            currentPage[i].className += " active";
+        }
+    }
+</script>

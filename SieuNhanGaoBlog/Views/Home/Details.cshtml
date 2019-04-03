@@ -1,0 +1,165 @@
+﻿@model SieuNhanGao.Service.ViewModels.DetailPostViewModel
+<!-- content post -->
+
+<main class="post blog-post col-lg-8">
+    <div class="container">
+        <div class="post-thumbnail"><img src="@Url.Content(@Model.Thumbnail)" alt="..." class="img-fluid"></div>
+    </div>
+    <div class="post-details">
+        <div class="post-meta d-flex justify-content-between">
+            <div class="category">
+                @{
+                    foreach (var item in Model.Categories)
+                    {
+                        <a href="/@item.CategoryName">@item.CategoryName</a>
+                    }
+                }
+            </div>
+        </div>
+        <!-- title and author -->
+        <h1>@Model.Title</h1>
+        <div class="post-footer d-flex align-items-center flex-column flex-sm-row">
+            <a href="#" class="author d-flex align-items-center flex-wrap">
+                <div class="avatar"><img src="@Url.Content(@Model.Avatar)" alt="..." class="img-fluid"></div>
+                <div class="title"><span>@Model.Author</span></div>
+            </a>
+            <div class="d-flex align-items-center flex-wrap">
+                <div class="date"><i class="icon-clock"></i>@Model.DateAgo</div>
+                <div class="views"><i class="icon-eye"></i>@Model.ViewCount</div>
+                <div class="comments meta-last"><i class="icon-comment"></i>@Model.Comments.Count()</div>
+            </div>
+        </div>
+        <!-- end title and author -->
+        <div class="post-body">
+            @Html.Raw(@Model.Content)
+            @*@Model.Content*@
+        </div>
+        <!-- end post body -->
+        <!-- post tag -->
+        <div class="post-tags">
+            @{
+                foreach (var item in Model.Tags)
+                {
+                    <a href="/tags/@item.TagName" class="tag">#@item.TagName</a>
+                }
+            }
+        </div>
+        <!-- end post tag -->
+        <!-- post recent -->
+
+        <div class="posts-nav d-flex justify-content-between align-items-stretch flex-column flex-md-row">
+            @{
+                if (@Model.PreviousPost != null)
+                {
+                    var url = "/" + @Model.PreviousPost.Alias + "-post." + @Model.PreviousPost.Id + ".html";
+                    <a href="@url" class="prev-post text-left d-flex align-items-center">
+                        <div class="icon prev"><i class="fa fa-angle-left"></i></div>
+                        <div class="text">
+                            <strong class="text-primary">Previous Post </strong>
+                            <h6>@Model.PreviousPost.Title</h6>
+                        </div>
+                    </a>
+                }
+                if (Model.NextPost != null)
+                {
+                    var url = "/" + @Model.NextPost.Alias + "-post." + @Model.NextPost.Id + ".html";
+                    <a href="@url" class="next-post text-right d-flex align-items-center justify-content-end">
+                        <div class="text">
+                            <strong class="text-primary">Next Post </strong>
+                            <h6>@Model.NextPost.Title</h6>
+                        </div>
+                        <div class="icon next"><i class="fa fa-angle-right">   </i></div>
+                    </a>
+                }
+            }
+        </div>
+
+        <!-- end post recent -->
+        <!-- post comment -->
+        <div class="post-comments">
+            <header>
+                <h3 class="h6">Post Comments<span class="no-of-comments">(@Model.Comments.Count())</span></h3>
+            </header>
+            @{
+                if (@Model.Comments.Count() > 0)
+                {
+                    foreach (var item in Model.Comments)
+                    {
+                        <div class="comment">
+                            <div class="comment-header d-flex justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="image"><img src="img/user.svg" alt="..." class="img-fluid rounded-circle"></div>
+                                    <div class="title"><strong>@item.UserName</strong><span class="date">@item.CreateDate</span></div>
+                                </div>
+                            </div>
+                            <div class="comment-body">
+                                <p>@item.Content</p>
+                            </div>
+                        </div>
+                    }
+                }
+            }
+        </div>
+        <!-- end post comment -->
+        <!-- add comment -->
+        <div class="add-comment">
+            <div id="msg"> </div>
+            <header>
+                <h3 class="h6">Leave a reply</h3>
+            </header>
+            <form action="#" class="commenting-form">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <input type="text" name="username" id="username" placeholder="Name" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" name="username" id="useremail" placeholder="Email Address (will not be published)" class="form-control">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <textarea name="usercomment" id="usercomment" placeholder="Type your comment" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <button id="submitComment" type="submit" class="btn btn-secondary">Submit Comment</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- end add comment -->
+        <!-- end post body -->
+    </div>
+</main>
+<!-- end contetn post -->
+<script>
+    $(function () {
+        $("#submitComment").click(function (e) {
+            e.preventDefault();
+            var theData = {};
+
+            theData["Name"] = $("#username").val();
+            theData["Email"] = $("#useremail").val();
+            theData["Content"] = $("#usercomment").val();
+            theData["PostId"] = @Model.PostId;
+            $.ajax({
+                type: "POST",
+                url: "Home/AddComment",
+                data: JSON.stringify(theData),
+                dataType: "json",
+                contentType: "application/json",
+                success: function (response) {
+                    if (response.status === true) {
+                        $("#username").val('');
+                        $("#useremail").val('');
+                        $("#usercomment").val('');
+                        $('#msg').html(response.message);
+                    } else {
+                        $('#msg').html(response.message);
+                    }
+                },
+                timeout:3000
+            });
+            setTimeout(function () {
+                $('#msg').empty();
+            }, 3000);
+        });
+    });
+</script>

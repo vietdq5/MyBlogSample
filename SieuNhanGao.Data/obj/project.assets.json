@@ -3655,11 +3655,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Data\\SieuNhanGao.Data.csproj",
+      "projectUniqueName": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Data\\SieuNhanGao.Data.csproj",
       "projectName": "SieuNhanGao.Data",
-      "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Data\\SieuNhanGao.Data.csproj",
+      "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Data\\SieuNhanGao.Data.csproj",
       "packagesPath": "C:\\Users\\hello\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Data\\obj\\",
+      "outputPath": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3678,11 +3678,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Data.EF\\SieuNhanGao.Data.EF.csproj": {
-              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Data.EF\\SieuNhanGao.Data.EF.csproj"
+            "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Data.EF\\SieuNhanGao.Data.EF.csproj": {
+              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Data.EF\\SieuNhanGao.Data.EF.csproj"
             },
-            "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Infrastructure\\SieuNhanGao.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoDo\\BlogGaoDo-master\\SieuNhanGao.Infrastructure\\SieuNhanGao.Infrastructure.csproj"
+            "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Infrastructure\\SieuNhanGao.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\hello\\Desktop\\BlogGaoXanh\\MyBlogSample\\SieuNhanGao.Infrastructure\\SieuNhanGao.Infrastructure.csproj"
             }
           }
         }

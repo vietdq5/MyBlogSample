@@ -44,14 +44,14 @@ namespace SieuNhanGaoBlog.Areas.Admin.Controllers
                 {
                     HttpContext.Session.SetString(UserConstants.USER_ID, user.Id.ToString());
                     HttpContext.Session.SetString(UserConstants.USER_NAME, user.UserName);
-                    HttpContext.Session.SetString(UserConstants.USER_PASS, user.Password);
                     HttpContext.Session.SetString(UserConstants.USER_AVATAR, user.Avatar);
+                    HttpContext.Session.SetString(UserConstants.IS_ADMIN, user.IsAdmin.ToString());
                     return RedirectToAction(nameof(Index));
                 }
                 else
                 {
                     //ViewBag.error = passWordMD5;
-                    ViewBag.error = "username or pass không đúng or do m đã bị lock";
+                    ViewBag.error = "username or pass không đúng or đã bị lock";
                 }
             }
             return View();

@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<SieuNhanGao.Service.ViewModels.RoleViewModel>
+<div class="card shadow mb-4">
+    <div class="container-fluid">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered dataTable" id="dataTable" cellspacing="0" role="grid" aria-describedby="dataTable_info"
+                       style="width: 100%;">
+                    <thead>
+                        <tr role="row">
+                            <th tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1"
+                                style="width: 100px;" aria-sort="descending">
+                                @Html.DisplayNameFor(model => model.Id)
+                            </th>
+                            <th tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1"
+                                style="width: 250px;">
+                                @Html.DisplayNameFor(model => model.RoleName)
+                            </th>
+                            <th tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1"
+                                style="width: 350px;">
+                                @Html.DisplayNameFor(model => model.Description)
+                            </th>
+                            <th tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1"
+                                style="width: 123px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr role="row">
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Id)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.RoleName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Description)
+                                </td>
+                                <td>
+                                    <a asp-area="Admin" asp-controller="Role" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        @* add phan trang *@
+    </div>
+</div>
