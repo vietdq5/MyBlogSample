@@ -71,6 +71,8 @@ namespace SieuNhanGaoBlog
             services.AddTransient<IUserRoleService, UserRoleService>();
             services.AddTransient<IBusinessRoleService, BusinessRoleService>();
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IPostCategoryService, PostCategoryService>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

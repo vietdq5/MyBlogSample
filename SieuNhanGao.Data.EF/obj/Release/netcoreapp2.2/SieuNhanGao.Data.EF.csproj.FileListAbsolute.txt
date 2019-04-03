@@ -1,0 +1,12 @@
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data.EF\bin\Release\netcoreapp2.2\SieuNhanGao.Data.EF.deps.json
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data.EF\bin\Release\netcoreapp2.2\SieuNhanGao.Data.EF.dll
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data.EF\bin\Release\netcoreapp2.2\SieuNhanGao.Data.EF.pdb
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data.EF\bin\Release\netcoreapp2.2\SieuNhanGao.Infrastructure.dll
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data.EF\bin\Release\netcoreapp2.2\SieuNhanGao.Infrastructure.pdb
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data.EF\obj\Release\netcoreapp2.2\SieuNhanGao.Data.EF.csprojAssemblyReference.cache
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data.EF\obj\Release\netcoreapp2.2\SieuNhanGao.Data.EF.csproj.CoreCompileInputs.cache
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data.EF\obj\Release\netcoreapp2.2\SieuNhanGao.Data.EF.AssemblyInfoInputs.cache
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data.EF\obj\Release\netcoreapp2.2\SieuNhanGao.Data.EF.AssemblyInfo.cs
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data.EF\obj\Release\netcoreapp2.2\SieuNhanGao.Data.EF.csproj.CopyComplete
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data.EF\obj\Release\netcoreapp2.2\SieuNhanGao.Data.EF.dll
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data.EF\obj\Release\netcoreapp2.2\SieuNhanGao.Data.EF.pdb

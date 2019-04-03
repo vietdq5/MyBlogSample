@@ -60,3 +60,19 @@ C:\Users\vietdq5\Desktop\New folder\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\ob
 C:\Users\vietdq5\Desktop\New folder\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\obj\Debug\netcoreapp2.2\SieuNhanGao.Data.csproj.CopyComplete
 C:\Users\vietdq5\Desktop\New folder\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\obj\Debug\netcoreapp2.2\SieuNhanGao.Data.dll
 C:\Users\vietdq5\Desktop\New folder\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\obj\Debug\netcoreapp2.2\SieuNhanGao.Data.pdb
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\bin\Debug\netcoreapp2.2\SieuNhanGao.Data.deps.json
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\bin\Debug\netcoreapp2.2\SieuNhanGao.Data.runtimeconfig.json
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\bin\Debug\netcoreapp2.2\SieuNhanGao.Data.runtimeconfig.dev.json
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\bin\Debug\netcoreapp2.2\SieuNhanGao.Data.dll
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\bin\Debug\netcoreapp2.2\SieuNhanGao.Data.pdb
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\bin\Debug\netcoreapp2.2\SieuNhanGao.Data.EF.dll
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\bin\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.dll
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\bin\Debug\netcoreapp2.2\SieuNhanGao.Data.EF.pdb
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\bin\Debug\netcoreapp2.2\SieuNhanGao.Infrastructure.pdb
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\obj\Debug\netcoreapp2.2\SieuNhanGao.Data.csprojAssemblyReference.cache
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\obj\Debug\netcoreapp2.2\SieuNhanGao.Data.csproj.CoreCompileInputs.cache
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\obj\Debug\netcoreapp2.2\SieuNhanGao.Data.AssemblyInfoInputs.cache
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\obj\Debug\netcoreapp2.2\SieuNhanGao.Data.AssemblyInfo.cs
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\obj\Debug\netcoreapp2.2\SieuNhanGao.Data.csproj.CopyComplete
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\obj\Debug\netcoreapp2.2\SieuNhanGao.Data.dll
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Data\obj\Debug\netcoreapp2.2\SieuNhanGao.Data.pdb

@@ -31,7 +31,5 @@ namespace SieuNhanGao.Service.ViewModels
         public int UserId { get; set; }
         public int? ViewCount { get; set; }
 
-        public IList<string> ListTag { get; set; }
-        public IList<string> ListMenu { get; set; }
     }
 }

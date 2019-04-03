@@ -1,0 +1,12 @@
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Utilities\bin\Release\netcoreapp2.2\SieuNhanGao.Utilities.deps.json
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Utilities\bin\Release\netcoreapp2.2\SieuNhanGao.Utilities.dll
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Utilities\bin\Release\netcoreapp2.2\SieuNhanGao.Utilities.pdb
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Utilities\bin\Release\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Utilities\bin\Release\netcoreapp2.2\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Utilities\obj\Release\netcoreapp2.2\SieuNhanGao.Utilities.csprojAssemblyReference.cache
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Utilities\obj\Release\netcoreapp2.2\SieuNhanGao.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Utilities\obj\Release\netcoreapp2.2\SieuNhanGao.Utilities.AssemblyInfoInputs.cache
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Utilities\obj\Release\netcoreapp2.2\SieuNhanGao.Utilities.AssemblyInfo.cs
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Utilities\obj\Release\netcoreapp2.2\SieuNhanGao.Utilities.csproj.CopyComplete
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Utilities\obj\Release\netcoreapp2.2\SieuNhanGao.Utilities.dll
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Utilities\obj\Release\netcoreapp2.2\SieuNhanGao.Utilities.pdb

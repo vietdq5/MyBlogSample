@@ -50,8 +50,8 @@ namespace SieuNhanGaoBlog.Areas.Admin.Controllers
                 }
                 else
                 {
-                    //ViewBag.error = passWordMD5;
-                    ViewBag.error = "username or pass không đúng or đã bị lock";
+                    ViewBag.error = passWordMD5;
+                    //ViewBag.error = "username or pass không đúng or đã bị lock";
                 }
             }
             return View();

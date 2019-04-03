@@ -10,7 +10,6 @@ namespace SieuNhanGao.Data.EF.Entities
     public class Post : DomainEntity<int>
     {
         [MaxLength(500)]
-        [Required]
         public string Title { get; set; }
 
         [MaxLength(500)]

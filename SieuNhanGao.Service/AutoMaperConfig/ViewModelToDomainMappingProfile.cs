@@ -30,7 +30,10 @@ namespace SieuNhanGao.Service.AutoMaperConfig
            .ConstructUsing(c => new Role());
 
             CreateMap<UserRoleViewModel, UserRole>()
-            .ConstructUsing(c => new UserRole());
+           .ConstructUsing(c => new UserRole());
+
+            CreateMap<PostCategoryViewModel, PostCategory>()
+           .ConstructUsing(c => new PostCategory());
         }
     }
 }

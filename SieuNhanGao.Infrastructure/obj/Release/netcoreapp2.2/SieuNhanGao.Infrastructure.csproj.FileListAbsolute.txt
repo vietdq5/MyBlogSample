@@ -1,0 +1,9 @@
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\bin\Release\netcoreapp2.2\SieuNhanGao.Infrastructure.deps.json
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\bin\Release\netcoreapp2.2\SieuNhanGao.Infrastructure.dll
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\bin\Release\netcoreapp2.2\SieuNhanGao.Infrastructure.pdb
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\obj\Release\netcoreapp2.2\SieuNhanGao.Infrastructure.csprojAssemblyReference.cache
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\obj\Release\netcoreapp2.2\SieuNhanGao.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\obj\Release\netcoreapp2.2\SieuNhanGao.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\obj\Release\netcoreapp2.2\SieuNhanGao.Infrastructure.AssemblyInfo.cs
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\obj\Release\netcoreapp2.2\SieuNhanGao.Infrastructure.dll
+C:\Users\hello\Desktop\BlogGaoXanh\MyBlogSample\SieuNhanGao.Infrastructure\obj\Release\netcoreapp2.2\SieuNhanGao.Infrastructure.pdb

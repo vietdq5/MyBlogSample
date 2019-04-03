@@ -16,6 +16,7 @@ namespace SieuNhanGao.Service.AutoMaperConfig
             CreateMap<BusinessRole, BusinessRoleViewModel>();
             CreateMap<Role, RoleViewModel>();
             CreateMap<UserRole, UserRoleViewModel>();
+            CreateMap<PostCategory, PostCategoryViewModel>();
         }
     }
 }
